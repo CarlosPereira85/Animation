@@ -1,0 +1,364 @@
+body {
+  box-sizing: content-box;
+  margin: auto;
+}
+
+section:first-of-type {
+  height: 80vh;
+  width: 80vw;
+  position: absolute;
+  top: 550px;
+  margin-bottom: 10%;
+}
+
+#train {
+  display: block;
+  position: relative;
+  top: 1%;
+  animation: trem 15s linear;
+
+  position: absolute;
+  top: -55px;
+
+  /* transform: perspective(300px) rotatey(60deg); */
+}
+
+.trilho2 {
+  padding: 0;
+  position: relative;
+  right: 1.8%;
+  z-index: -1;
+}
+.trilho3 {
+  padding: 0;
+  position: relative;
+  right: 3.4%;
+}
+
+.gap {
+  display: inline-block;
+  height: 3px;
+  background-color: #b2b3b3;
+  width: 12px;
+  margin-bottom: 5px;
+  position: relative;
+  right: 0.5%;
+  z-index: 2;
+}
+
+.gapright {
+  position: relative;
+  right: 2.3%;
+  z-index: 3;
+}
+
+@keyframes trem {
+  0% {
+    top: -55px;
+    left: 0;
+  }
+  50% {
+    top: -55px;
+    left: 65%;
+  }
+  100% {
+    top: -55px;
+    left: 98%;
+  }
+}
+.tremabove {
+  background-image: url(./Screenshot\ 2021-11-05\ 014541.png);
+  background-repeat: no-repeat;
+  padding: 30px;
+  background-size: 30px;
+  position: absolute;
+  height: 30%;
+  left: 92.7%;
+  bottom: 29%;
+  z-index: 3;
+  animation: trem4 10s 10s linear;
+
+  opacity: 0;
+}
+@keyframes trem4 {
+  0% {
+    transform: translateY(0);
+    opacity: 3;
+  }
+
+  50% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translatey(-300px);
+    opacity: 3;
+  }
+}
+
+.reto {
+  background-image: url(./trilho\ de\ cima.png);
+  background-repeat: no-repeat;
+  padding: 60px;
+  background-size: 40px;
+  position: absolute;
+  left: 114.5%;
+  bottom: 93.5%;
+  height: 300px;
+  z-index: -3;
+}
+.curva {
+  background-image: url(./testetrilho.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: 191px;
+  width: 300px;
+
+  position: absolute;
+  left: 75%;
+  bottom: 14%;
+  z-index: -4;
+}
+
+.curva2 {
+  background-image: url(./melhor.jpg);
+  background-repeat: no-repeat;
+  padding: 60px;
+  background-size: 40px;
+  position: absolute;
+  left: 99.6%;
+  bottom: 105.7%;
+  height: 30%;
+
+  z-index: -3;
+}
+
+/* transform: perspective(200px) rotatex(40deg); */
+
+h3 {
+  background-image: url(./trainstation.png);
+  height: 300px;
+  width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 350px;
+  position: absolute;
+  z-index: -2;
+}
+
+article:first-of-type h3 {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+#traimestacao {
+  background-image: url(./train\ right\ side1.png);
+  background-size: 308px;
+  height: 110px;
+  width: 300px;
+  position: absolute;
+  bottom: 27.7%;
+  left: 20%;
+  background-repeat: no-repeat;
+  animation: trem2 4s 2ms linear;
+}
+@keyframes trem2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(900px) rotateY(90deg);
+
+    background-size: 300px;
+    transform: 10s;
+  }
+}
+
+.trilhoretodireito {
+  background-image: url(./trilho\ de\ cimaonhe.png);
+  background-size: 46px;
+  height: 300px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: perspective(400px) rotateX(80deg);
+  position: absolute;
+  left: 46.2%;
+  top: 25%;
+}
+.trilholateral {
+  background-image: url(./trilho\ lateral.png);
+  background-size: 450px;
+  height: 400px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 75%;
+  top: 43%;
+  z-index: -2;
+}
+.trilho2per {
+  background-image: url(./trilho2tremper.jpg);
+  background-size: 120px;
+  height: 200px;
+  width: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 81%;
+  bottom: 29%;
+  z-index: -4;
+}
+.lange {
+  background-image: url(./longe\ curve.png);
+  background-size: 132px;
+  height: 220px;
+  width: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 79.7%;
+  bottom: 67.9%;
+}
+.cumprido {
+  background-image: url(./long.png);
+  background-size: 585px;
+  height: 140px;
+  width: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 54.2%;
+  bottom: 82.2%;
+}
+.cumprido2 {
+  background-image: url(./long\ -\ Kopie.png);
+  background-size: 585px;
+  height: 140px;
+  width: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 25.2%;
+  bottom: 87.9%;
+}
+.trilhoabove {
+  background-image: url(./trilho\ de\ cima\ -\ Kopie.png);
+  background-size: 314px;
+  height: 140px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 15.2%;
+  bottom: 85.7%;
+}
+.tremvindodecima {
+  background-image: url(./Untitled-1.png);
+  background-size: 50px;
+  height: 140px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 1%;
+  bottom: 98.7%;
+  animation: diagonal 5s infinite;
+}
+.tremvindodecima:hover {
+  background-image: url(./flight.png);
+  position: absolute;
+  left: 20px;
+
+  width: 2000px;
+  transform: translatex(-3000px);
+}
+
+.trilhodiago {
+  background-image: url(./trilhodiago.jpg);
+  background-size: 610px;
+  height: 340px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 4.3%;
+  bottom: 65.7%;
+  z-index: -1;
+}
+@keyframes diagonal {
+  0% {
+    bottom: 101%;
+  }
+
+  100% {
+    transform: translate(100px, 200px) scale(4, 4);
+  }
+}
+.vagaoatras {
+  background-image: url(./Layer\ 0.jpg);
+  background-size: 70px;
+  height: 150px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 73%;
+  bottom: 35%;
+  animation: trem3 8s 4s;
+  opacity: 0;
+
+  /* 
+position: relative;
+left: 82%;
+bottom: -6%;
+z-index: -3; */
+}
+
+@keyframes trem3 {
+  0% {
+    transform: translate(0px 0px);
+    opacity: 3;
+  }
+
+  100% {
+    transform: translateY(-300px) scale(0);
+    opacity: 3;
+  }
+}
+
+.lindo {
+  background-image: url(./lindo.png);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 47.3%;
+  bottom: 55%;
+  background-size: 10px;
+  animation: trem5 10s infinite;
+  z-index: 3;
+}
+
+/* .background { background-image: url(./floresta2.jpg);
+height: 280px;
+background-size: 280px;
+background-repeat: no-repeat;
+margin-left: 40.3%;
+margin-top: 12%;
+z-index: -4;
+
+} */
+
+@keyframes trem5 {
+  0% {
+    transform: translate(0px 0px);
+  }
+
+  100% {
+    transform: translatey(1100px) translateX(800px) scale(40);
+  }
+}
